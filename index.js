@@ -40,7 +40,7 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackJack === false) {
+    if (isAlive === true && sum < 21) {
         let thirdCard = getRandomNumber();
         cards.push(thirdCard);
         sum += thirdCard;
